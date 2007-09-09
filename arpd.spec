@@ -1,11 +1,7 @@
-%define	name	arpd
-%define	version	0.2
-%define	release	%mkrel 5
-
 Summary:	ARP reply daemon
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		arpd
+Version:	0.2
+Release:	%mkrel 6
 Group:		System/Servers
 License:	BSD
 URL:		http://niels.xtdnet.nl/honeyd/
@@ -100,5 +96,3 @@ install -m644 %{name}.sysconfig %{buildroot}%{_sysconfdir}/sysconfig/%{name}
 %config(noreplace) %attr(0644,root,root) %{_sysconfdir}/sysconfig/%{name}
 %attr(0755,root,root) %{_sbindir}/%{name}
 %attr(0644,root,root) %{_mandir}/man8/%{name}.8*
-
-
