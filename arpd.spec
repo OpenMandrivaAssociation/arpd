@@ -1,7 +1,7 @@
 Summary:	ARP reply daemon
 Name:		arpd
 Version:	0.2
-Release:	%mkrel 6
+Release:	%mkrel 7
 Group:		System/Servers
 License:	BSD
 URL:		http://niels.xtdnet.nl/honeyd/
