@@ -9,10 +9,10 @@ Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}.init.bz2
 Source2:	%{name}.sysconfig.bz2
 Patch0:		arpd-0.2-gcc34.diff
-Requires(preun):		rpm-helper
-Requires(post):		rpm-helper
+Requires(preun): rpm-helper
+Requires(post): rpm-helper
 BuildRequires:	libevent0.9-devel
-BuildRequires:	libdnet-devel
+BuildRequires:	dnet-devel
 BuildRequires:	libpcap-devel
 BuildRequires:	flex
 BuildRequires:	bison
