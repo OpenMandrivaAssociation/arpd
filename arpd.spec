@@ -16,6 +16,7 @@ BuildRequires:	dnet-devel
 BuildRequires:	libpcap-devel
 BuildRequires:	flex
 BuildRequires:	bison
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 arpd replies to any ARP request for an IP address matching the
