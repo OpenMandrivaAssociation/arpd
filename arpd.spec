@@ -1,7 +1,7 @@
 Summary:	ARP reply daemon
 Name:		arpd
 Version:	0.2
-Release:	%mkrel 7
+Release:	%mkrel 8
 Group:		System/Servers
 License:	BSD
 URL:		http://niels.xtdnet.nl/honeyd/
@@ -16,7 +16,7 @@ BuildRequires:	dnet-devel
 BuildRequires:	libpcap-devel
 BuildRequires:	flex
 BuildRequires:	bison
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 arpd replies to any ARP request for an IP address matching the
