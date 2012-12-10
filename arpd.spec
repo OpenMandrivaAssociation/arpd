@@ -96,3 +96,59 @@ install -m644 %{name}.sysconfig %{buildroot}%{_sysconfdir}/sysconfig/%{name}
 %config(noreplace) %attr(0644,root,root) %{_sysconfdir}/sysconfig/%{name}
 %attr(0755,root,root) %{_sbindir}/%{name}
 %attr(0644,root,root) %{_mandir}/man8/%{name}.8*
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2-11mdv2011.0
++ Revision: 616604
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 0.2-10mdv2010.0
++ Revision: 436671
+- rebuild
+
+* Wed Oct 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.2-9mdv2009.1
++ Revision: 298232
+- rebuilt against libpcap-1.0.0
+
+* Sun Jul 20 2008 Oden Eriksson <oeriksson@mandriva.com> 0.2-8mdv2009.0
++ Revision: 238993
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - adapt to %%_localstatedir now being /var instead of /var/lib (#22312)
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sun Sep 09 2007 Oden Eriksson <oeriksson@mandriva.com> 0.2-7mdv2008.0
++ Revision: 83891
+- bump release
+- fix deps
+- rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - fix prereq
+
+
+* Fri Dec 22 2006 Oden Eriksson <oeriksson@mandriva.com> 0.2-5mdv2007.0
++ Revision: 101561
+- Import arpd
+
+* Mon Jun 19 2006 Emmanuel Andry <eandry@mandriva.org> 0.2-5mdv2007.0
+- rebuild
+- %%mkrel
+
+* Thu Jul 14 2005 Oden Eriksson <oeriksson@mandriva.com> 0.2-4mdk
+- rebuilt against new libpcap-0.9.1 (aka. a "play safe" rebuild)
+
+* Mon Jan 17 2005 Oden Eriksson <oden.eriksson@kvikkjokk.net> 0.2-3mdk
+- fix deps and build
+
+* Mon Dec 22 2003 Michael Scherer <misc@mandrake.org> 0.2-2mdk
+- correct initscript
+- remove explicit lib Requires
+
