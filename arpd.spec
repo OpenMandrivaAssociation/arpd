@@ -13,7 +13,7 @@ Requires(preun): rpm-helper
 Requires(post): rpm-helper
 BuildRequires:	libevent0.9-devel
 BuildRequires:	dnet-devel
-BuildRequires:	libpcap-devel
+BuildRequires:	pcap-devel = 1.3.0-2
 BuildRequires:	flex
 BuildRequires:	bison
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
