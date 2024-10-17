@@ -4,7 +4,7 @@ Version:	0.2
 Release:	13
 Group:		System/Servers
 License:	BSD
-URL:		http://niels.xtdnet.nl/honeyd/
+URL:		https://niels.xtdnet.nl/honeyd/
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}.init.bz2
 Source2:	%{name}.sysconfig.bz2
