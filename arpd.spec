@@ -11,6 +11,11 @@ Source2:	%{name}.sysconfig.bz2
 Patch0:		arpd-0.2-gcc34.diff
 Requires(preun): rpm-helper
 Requires(post): rpm-helper
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libevent0.9-devel
 BuildRequires:	dnet-devel
 BuildRequires:	pcap-devel = 1.3.0-2
